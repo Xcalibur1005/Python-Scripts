@@ -33,7 +33,7 @@ def threader():
 		ICMP_PING_SWEEP(worker)
 		q.task_done()
 
-q = Queue()
+q = Queue.Queue()
 
 ## Defining number of threads ##
 for x in range(10):
